@@ -9,6 +9,9 @@ Required lib:
     urllib2
     openpyxl
     pandas
+    pathlib
+    sys
+    
 Make sure Internet Connection is avialable when running the program
 #####################################
 Setting parameters
