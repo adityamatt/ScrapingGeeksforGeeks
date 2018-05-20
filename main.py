@@ -51,7 +51,7 @@ for something in li_list:
             continue
         new_link="=HYPERLINK(\""+link+"\",\"link\")"
         ws.cell(row=count,column=1).value=text;
-        ws.cell(row=count,column=3).value=link;
+        #ws.cell(row=count,column=3).value=link;
         ws.cell(row=count,column=2).value=new_link;
         count=count+1
 
