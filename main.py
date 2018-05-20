@@ -47,12 +47,12 @@ for something in li_list:
         if "https://www.geeksforgeeks.org/" not in link:
             continue
         text=smart_str(anchor_tag.string)
-        if text.count(' ')<=3:
+        if text.count(' ')<=1:
             continue
         new_link="=HYPERLINK(\""+link+"\",\"link\")"
         ws.cell(row=count,column=1).value=text;
-        ws.cell(row=count,column=2).value=link;
-        ws.cell(row=count,column=3).value=new_link;
+        ws.cell(row=count,column=3).value=link;
+        ws.cell(row=count,column=2).value=new_link;
         count=count+1
 
 wb.save(fileName)
